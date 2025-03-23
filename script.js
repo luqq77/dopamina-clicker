@@ -300,7 +300,10 @@ dvdUpg.addEventListener("click", ()=>{
                     rewardUpg.classList.remove("shown")
                     document.querySelector(".click").classList.add("hidden")
                     document.querySelector(".addons").classList.add("hidden")
-                    dvd.innerHTML = ""
+                    posX = 100
+                    posY = 100
+                    speedX = 0
+                    speedY = 0
                     shop.classList.add("hidden")
                     document.querySelector(".reward_screen").style.display = "flex"
                     document.querySelector(".david_video").play()
