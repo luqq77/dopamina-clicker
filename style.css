@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    touch-action: manipulation;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shop{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    right: 0px;
+    margin-top: 230px;
+    box-shadow: 0px 0px 4px 0px ;
+    padding: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #ffffffe7;
+}
+
+.shop_items{
+    margin-bottom: 30px;
+}
+
+.container p{
+    margin-top: 10px;
+}
+
+.open_shop{
+    cursor: pointer;
+    user-select: none;
+}
+.open_shop:hover{
+    opacity: 70%;
+}
+
+.shop > span{
+    font-weight: 700;
+    padding: 10px 0px 20px;
+}
+
+.open{
+    padding: 40px 70px;
+}
+
+.shop_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.counter_text, .counter{
+    font-size: 1.5rem;
+}
+
+button{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 4px;
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    user-select: none;
+}
+
+.upgrade{
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 0px 0px 4px 0px ;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffffffbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%)
+}
+
+.upgrade:hover{
+    opacity: 80%;
+}
+
+.upgrade img{
+    user-select: none;
+    width: 40px;
+}
+
+.upgrades{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    gap: 10px;
+}
+
+.description{
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 0px 4px 0px ;
+    border-radius: 20px;
+    padding: 10px 5px;
+    user-select: none;
+    bottom: -120px;
+    width: 200px;
+    background-color: #ffffffbb;
+}
+
+.sound:hover + .sound_des{
+    display: block;
+}
+.logo:hover + .logo_des{
+    display: block;
+}
+.subway:hover + .subway_des{
+    display: block;
+}
+.btn:hover + .btn_des{
+    display: block;
+}
+.crit:hover + .crit_des{
+    display: block;
+}
+.dvd_upg:hover + .dvd_des{
+    display: block;
+}
+.dis:hover + .dis_des{
+    display: block;
+}
+.counter_upg:hover + .counter_des{
+    display: block;
+}
+.pinwheel:hover + .pinwheel_des{
+    display: block;
+}
+.music:hover + .music_des{
+    display: block;
+}
+.dvd_sound:hover + .dvd_sound_des{
+    display: block;
+}
+.colors:hover + .colors_des{
+    display: block;
+}
+.slime:hover + .slime_des{
+    display: block;
+}
+.weather:hover + .weather_des{
+    display: block;
+}
+.shop_upg:hover + .shop_upg_des{
+    display: block;
+}
+.reward:hover + .reward_des{
+    display: block;
+}
+
+.btn:hover + .description{
+    bottom: -140px;
+}
+
+.colors:hover + .description{
+    bottom: -140px;
+}
+
+.crit:hover + .description{
+    bottom: -140px;
+}
+
+.dvd_upg:hover + .description{
+    bottom: -170px;
+}
+
+.counter_upg:hover + .description{
+    bottom: -170px;
+}
+
+.music:hover + .description{
+    bottom: -160px;
+}
+.slime:hover + .description{
+    bottom: -140px;
+}
+.weather:hover + .description{
+    bottom: -180px;
+}
+.shop_upg:hover + .description{
+    bottom: -140px;
+}
+.reward:hover + .description{
+    bottom: -200px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description > p{
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.hidden{
+    display: none;
+    transition: 1s;
+}
+
+.disable{
+    display: none;
+    transition: 1s;
+}
+
+.vis_hidden{
+    visibility: hidden;
+}
+
+
+.subway_vid, .dis_vid, .slime_vid{
+    width: 20%;
+    position: absolute;
+}
+
+video{
+    z-index: -1; 
+}
+
+.dis_vid{   
+    margin-top: 300px;
+}
+
+.wesele_gif{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.slime_vid{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+
+
+.btn_upgraded{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rebeccapurple;
+    border: none;
+    background-color: aliceblue;
+    padding: 15px 30px;
+    box-shadow: 0px 0px 4px 0px ;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn_upgraded:hover{
+    background-color: rgba(102, 51, 153, 0.678);
+    color: aliceblue;
+}
+.btn_upgraded:active{
+    background-color: rgba(147, 128, 167, 0.678);
+    color: aliceblue;
+}
+
+.dvd {
+    position: fixed;
+    z-index: -1;
+}
+
+
+.dvd_max{
+    margin-left: 5px;
+}
+
+.background_vid, .background_vid_colors{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.background_vid_colors{
+    background-color: rgba(70, 86, 177, 0.3);
+}
+
+.weather_input{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 4px;
+    padding: 0px 40px 0px;
+    box-shadow: 0px 2px 4px 0px;
+    border-radius: 10px;
+    border-top: none;
+    background-color: #ffffffbb;
+}
+
+.reward_screen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .subway_vid{
+        width: 220px;
+        position: absolute; 
+    }
+
+    .dis_vid{
+        width: 200px;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .wesele_gif{
+        width: 200px;
+    }
+
+    .slime_vid{
+        width: 220px;
+    }
+
+    .counter_text, .counter{
+        font-size: 1rem;
+    }
+
+    .weather_input{
+        font-size: 0.6rem;
+        padding-top: 4px;
+        padding: 0px 10px;
+        box-shadow: 0px 2px 4px;
+    } 
+
+    .reward_screen{
+        font-size: 20px;
+    }
+    .david_video{
+        width: 100%;
+    }
+}
+

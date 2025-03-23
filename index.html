@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Dopamina Clicker</title>
+    <link type="image/png" sizes="100x100" rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">        
+</head>
+<body>
+        <video class="background_vid disable" autoplay loop muted plays-inline>
+            <source src="video/Pinwheel.mp4" type="video/mp4">
+        </video>
+        <div class="background_vid_colors disable"></div>
+        <main>
+            <section class="click">
+                <span class="counter_text">Dopamina: <span class="counter">0</span></span>
+                <button type="button" class="">Click</button>
+            </section>
+            <section class="upgrades "> 
+        <div class="container sound vis_hidden"> 
+                <div class="upgrade sound">
+                    <img src="img/sound_icon.png" alt="sound_icon">
+                </div>
+                <div class="description disable sound_des">
+                    <strong>Dźwięk przycisku</strong>
+                    <p>+1 dopaminy przy naciśnięciu</p>
+                    <span>Koszt: <span class="price">20</span> dopaminy</span>
+                </div>
+        </div>
+        <div class="container logo hidden"> 
+                <div class="upgrade logo">
+                    <img src="img/favicon_icon.png" alt="logo_icon">
+                </div>
+                <div class="description disable logo_des">
+                    <strong>Favicon</strong>
+                    <p>+nic</p>
+                    <span>Koszt: <span class="price">75</span> dopaminy</span>
+                </div>
+        </div>
+        <div class="container dvd_upg hidden ">
+            <div class="upgrade dvd_upg">
+                <img src="img/dvd_icon.png" alt="button upgrade image">
+            </div>
+            <div class="description disable dvd_des">
+                <strong>DvD<span class="dvd_max">0/5</span></strong>
+                <p>+1 Dopaminy przy odbiciu</p>
+                <p>z każdym ulepszeniem zwiększa prędkość</p>
+                <span>Koszt: <span class="price dvd_price">50</span> dopaminy</span>
+            </div>
+        </div>
+        <div class="container btn hidden ">
+            <div class="upgrade btn">
+                <img src="img/button_icon.png" alt="button upgrade image">
+            </div>
+            <div class="description disable btn_des">
+                <strong>Ulepszenie Przycisku</strong>
+                <p>+3 dopaminy przy naciśnięciu</p>
+                <span>Koszt: <span class="price">120</span> dopaminy</span>
+            </div>
+    </div>
+        <div class="container subway hidden ">
+            <div class="upgrade subway">
+                <img src="img/subway_icon.jpg" alt="subway">
+            </div>
+            <div class="description disable subway_des">
+                <strong>Subway surfers</strong>
+                <p>+2 dopaminy/s</p>
+                <span>Koszt: <span class="price">150</span> dopaminy</span>
+            </div>
+    </div>
+        <div class="container crit hidden ">
+            <div class="upgrade crit">
+                <img src="img/crit_icon.png" alt="button upgrade image">
+            </div>
+            <div class="description disable crit_des">
+                <strong>Krytyczne Kliknięcię</strong>
+                <p>15% szans na 2x więcej dopaminy przy naciścięciu</p>
+                <span>Koszt: <span class="price">250</span> dopaminy</span>
+            </div>
+    </div>
+    <div class="container dis hidden ">
+        <div class="upgrade dis">
+            <img src="img/dis_icon.png" alt="dis upgrade image">
+        </div>
+        <div class="description disable dis_des">
+            <strong>Lifehacki idola</strong>
+            <p>+5 Dopaminy/s</p>
+            <span>Koszt: <span class="price">400</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container dvd_sound hidden ">
+        <div class="upgrade dvd_sound">
+            <img src="img/dvd_sound_icon.png" alt="dvd_sound upgrade image">
+        </div>
+        <div class="description disable dvd_sound_des">
+            <strong>Dźwięk DVD</strong>
+            <p>+2 Przy odbiciu</p>
+            <span>Koszt: <span class="price">500</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container colors hidden ">
+        <div class="upgrade colors">
+            <img src="img/colors_icon.png" alt="colors upgrade image">
+        </div>
+        <div class="description disable colors_des">
+            <strong>Kolorowe ulepszenia</strong>
+            <p>+15% dopaminy ze wszystkich źródeł</p>
+            <span>Koszt: <span class="price">900</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container shop_upg hidden ">
+        <div class="upgrade shop_upg">
+            <img src="img/shop_icon.png" alt="shop upgrade image">
+        </div>
+        <div class="description disable shop_upg_des">
+            <strong>Sklep kosmetyczny</strong>
+            <p>Dodaje sklep z ulepszeniami kosmetycznymi</p>
+            <span>Koszt: <span class="price">500</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container counter_upg hidden ">
+        <div class="upgrade counter_upg">
+            <img src="img/counter_icon.png" alt="counter upgrade image">
+        </div>
+        <div class="description disable counter_des">
+            <strong>Ulepszenie licznika dopaminy</strong>
+            <p>+3 dopaminy przy naciśnięciu i +15% szans na krytyczne kliknięcie</p>
+            <span>Koszt: <span class="price">800</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container pinwheel hidden ">
+        <div class="upgrade pinwheel">
+            <img src="img/pinwheel_icon.png" alt="pinwheel upgrade image">
+        </div>
+        <div class="description disable pinwheel_des">
+            <strong>Mega dopaminowe tło</strong>
+            <p>+7 dopaminy/s</p>
+            <span>Koszt: <span class="price">1100</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container music hidden ">
+        <div class="upgrade music">
+            <img src="img/polonez_icon.png" alt="music upgrade image">
+        </div>
+        <div class="description disable music_des">
+            <strong>Muza do strzelania w gaźnik i palenia poloneza na plaka</strong>
+            <p>+6 dopaminy przy naciśnięciu</p>
+            <span>Koszt: <span class="price">1300</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container slime hidden ">
+        <div class="upgrade slime">
+            <img src="img/slime_icon.png" alt="slime upgrade image">
+        </div>
+        <div class="description disable slime_des">
+            <strong>Slajmy</strong>
+            <p>+10 dopaminy/s</p>
+            <p>zmienia DVD w slime</p>
+            <span>Koszt: <span class="price">1700</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container weather hidden ">
+        <div class="upgrade weather">
+            <img src="img/weather_icon.png" alt="weather upgrade image">
+        </div>
+        <div class="description disable weather_des">
+            <strong>Prognoza pogody Bukowice</strong>
+            <p>Jeśli jest <span style="color:darkorange;">ciepło🌞</span>: +5 dopaminy przy naciśnięciu</p>
+            <p>Jeśli jest <span style="color: rgb(89, 184, 243)">zimno🥶</span>: -5 dopaminy przy naciśnięciu</p>
+            <span>Koszt: <span class="price">2000</span> dopaminy</span>
+        </div>
+    </div>
+    <div class="container reward hidden ">
+        <div class="upgrade reward">
+            <img src="img/reward_icon.gif" alt="reward upgrade image">
+        </div>
+        <div class="description disable reward_des">
+            <strong>Nagroda</strong>
+            <p>Ostatnie najdroższe ulepszenie 😎</p>
+            <p style="color: crimson">Aby odebrać nagrode trzeba kupić wszystkie ulepszenia i przedmioty kosmetyczne!</p>
+            <span>Koszt: <span class="price">5000</span> dopaminy</span>
+        </div>
+    </div>
+          </section>
+          <section class="reward_screen">
+            <h1>GRATULACJE UŻYTKOWNIKU!</h1>
+            <p>Odbierz IPHONE 16 PRO!</p>
+            <a href="https://streamable.com/ty3n9v">Odbierz</a>
+            <video class="david_video" src="video/dawid jasper wygrał iphone.mp4"></video>
+          </section>
+        </main>
+        <section class="shop hidden">
+            <img class="open_shop" width="50px" src="img/shop_icon.png" alt="shop icon">
+            <h2 class="hidden">Sklep kosmetyczny</h2>
+            <span class="hidden">Kursory</span>
+            <article class="shop_items hidden">
+                <div class="container">
+                    <div class="upgrade cursor1">
+                        <img src="img/cursor1.png" alt="cursor1 upgrade image">
+                    </div>
+                    <p><strong>Kilof</strong></p>
+                    <p class="cursor1_pricetag">Koszt: <span class="price">300</span></p>
+                </div>
+                <div class="container">
+                    <div class="upgrade cursor2">
+                        <img src="img/cursor2.png" alt="cursor2 upgrade image">
+                    </div>
+                    <p><strong>Fidget spinner</strong></p>
+                    <p class="cursor2_pricetag">Koszt: <span class="price">500</span></p>
+                </div>
+                <div class="container">
+                    <div class="upgrade cursor3">
+                        <img src="img/cursor3.png" alt="cursor3 upgrade image">
+                    </div>
+                    <p><strong>Broj</strong></p>
+                    <p class="cursor3_pricetag">Koszt: <span class="price">900</span></p>
+                </div>
+            </article>
+          </section>
+          <div class="addons">
+            <strong class="weather_input"></strong>
+            <video class="subway_vid disable" src="video/Subway Surfers (2024) - Gameplay [4K 16x9] No Copyright.mp4" autoplay muted loop></video>
+            <video class="dis_vid disable" src="video/Najlepsze LIFEHACKI Z CIEPŁYM KLEJEM !.mp4" loop></video>
+            <video class="slime_vid disable" src="video/Satisfying Slime ASMR  Relaxing Slime Videos Compilation No Talking No Music No Voiceover.mp4" loop></video>
+            <img class="wesele_gif disable" src="img/wesele.gif" alt="wesele gif">
+            <div class="dvd hidden"><img src="img/dvd_icon.png" alt=""></div>
+        </div>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>
